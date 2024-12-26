@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comfort Companion</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <button id="menu-toggle" class="menu-toggle">
+      <i class="material-icons">menu</i>
+    </button>
+    <h1>Comfort Companion</h1>
+  </nav>
+
+  <div id="sidebar" class="sidebar">
+    <h2>Settings</h2>
+    <div class="toggle-wrapper">
+      <label for="dark-mode-toggle">Dark Mode</label>
+      <input type="checkbox" id="dark-mode-toggle">
+    </div>
+    <div class="logout-wrapper">
+      <a href="/tickLoggedout/tick.html" class="logout-link">
+        <i class="material-icons">exit_to_app</i> Log Out
+      </a>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay"></div>
+
+  <div class="chat-container">
+    <div id="chat-messages" class="chat-messages"></div>
+    <div class="chat-input">
+      <input type="text" id="input-message" placeholder="Type your message...">
+      <button id="joke-button" title="Tell me a joke">
+        <i class="material-icons">mood</i>
+      </button>
+      <button id="quote-button" title="Get an inspirational quote">
+        <i class="material-icons">format_quote</i>
+      </button>
+      <button id="send-button">
+        <i class="material-icons">send</i>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('joke-button').addEventListener('click', requestJoke);
+    document.getElementById('quote-button').addEventListener('click', requestQuote);
+  </script>
+</body>
+</html>

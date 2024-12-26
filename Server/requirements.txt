@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+transformers
+torch
+pydantic
+requests
+python-multipart
+python-dotenv 

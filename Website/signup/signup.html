@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Comfort Companion</title>
+    <link rel="stylesheet" href="signupcss.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <h1>Comfort Companion</h1>
+                <h2>Sign Up</h2>
+                <form id="signup-form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <i class="material-icons">person</i>
+                            <input type="text" id="username" placeholder="Username" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="material-icons">email</i>
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <i class="material-icons">cake</i>
+                            <input type="date" id="dob" placeholder="Date of Birth" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="material-icons">event</i>
+                            <input type="number" id="age" placeholder="Age" required min="0" max="120">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <i class="material-icons">work</i>
+                            <input type="text" id="occupation" placeholder="Occupation" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="material-icons">lock</i>
+                            <input type="password" id="password" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <i class="material-icons">lock_outline</i>
+                        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                    </div>
+                    <a href="/tickregistered/tick.html" class="button-link">Sign Up</a>
+                    
+                </form>
+                <p class="login-link">Already have an account? <a href="/login/in.html">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="toggle-container">
+        <button class="dropdown-button">Options</button>
+        <div class="dropdown-content">
+            <label for="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-toggle"> Dark Mode
+        </div>
+    </div>
+    <script src="j.js"></script>
+</body>
+</html>

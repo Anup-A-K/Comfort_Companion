@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Comfort Companion</title>
+    <link rel="stylesheet" href="login-style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <h1>Comfort Companion</h1>
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="input-group">
+                        <i class="material-icons">person</i>
+                        <input type="text" id="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="material-icons">lock</i>
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <a href="/index.html" class="button-link">Login</a>
+                </form>
+                <p class="signup-link">Don't have an account? <a href="/signup/signup.html">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="toggle-container">
+        <button class="dropdown-button">Options</button>
+        <div class="dropdown-content">
+            <label for="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-toggle"> Dark Mode
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
